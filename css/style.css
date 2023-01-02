@@ -1,0 +1,186 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+body{
+	background: #e2effa;
+	position: 	relative;
+	scroll-behavior: smooth;
+}
+html{
+	scroll-behavior: smooth;
+}
+.wraper{
+	width: 1200px;
+	margin: 0 auto;
+	position: relative;
+}
+h1{
+	margin-top: 19px;
+	margin-left: 170px;
+	color: #ffffff85;
+	font-size: 81px;
+	font-family: fantasy;
+}
+h2{
+	width: 200px;
+	margin: 100px auto 0;
+	color: #393636b5;
+	font-family: fantasy;
+	font-size: 48px;
+	text-align: center;
+}
+h2#art{
+	margin-top: 200px;
+}
+.main>p{
+	margin-top: 112px;
+    margin-left: 610px;
+    color: #cb2c2c85;
+    font-size: 48px;
+    font-family: fantasy;
+}
+.main>.first-p{
+	margin-left: 433px;
+	margin-top: 123px;
+}
+.link-main{
+	display: flex;
+	justify-content: space-around;
+	margin-top: -580px;
+
+}
+
+.link-main>a{
+	width: 150px;
+	color: #393636b5;
+	font-size: 15px;
+	font-family: fantasy;
+	text-decoration: none;
+	text-align: center;
+	padding: 4px;
+	background: #ffffff4d;
+	border: solid #39363685 1px;
+	border-radius: 12px;
+
+}
+.link-main>a:hover{
+	font-size: 17px;
+	color: #0000008c;
+	background: #ffffff80;
+	margin: -1px 0 -1px;
+}
+.art, .car, .people{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	align-items: center;
+	margin-top: 90px;
+}
+.art img, .car img, .people img{
+	max-height: 95vh;
+	border-radius: 50px;
+}
+.art>div, .car>div, .people>div{
+	display: inline-block;
+	position: relative;
+	max-height: 95vh;
+	margin-top: 20px;
+}
+.art>div:after, .car>div:after, .people>div:after{
+	content: "LET'S GO TO THE BURNING MAN";
+	color: 	#0000008c;
+	text-align: center;
+	font-family: fantasy;
+	font-size: 20px;
+	width: 100%;
+	background: #ffffff85;
+	position: absolute;
+	left: 0;
+	top: calc(50% - 12px);
+	display: none;
+}
+.art>div:hover:after, .car>div:hover:after, .people>div:hover:after {
+	display: block;
+}
+
+.gallery{
+	border: solid 1px #39363685;
+	border-radius: 12px;
+	position: fixed;
+	top: calc(50% - 100px);
+	left: 3px;
+	z-index: 10;
+	padding: 5px 5px;
+}
+.in-gallery{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-size: 25px;
+	font-family: fantasy;
+	color: #393636b5;
+	background: #ffffff4d;
+}
+.in-gallery-menu{
+	display: none;
+	flex-direction: column;
+	align-items: center;
+	position: fixed;
+	z-index: 20;
+	top: calc(50% - 101px);
+	left: 3px;
+	border: solid 1px #39363685;
+	border-radius: 12px;
+	background: #ffffff85;
+}
+.in-gallery-menu>a{
+	text-decoration: none;
+	font-size: 25px;
+	font-family: fantasy;
+	color: #393636b5;
+	padding: 13px 21px;
+
+}
+.gallery:hover .in-gallery, .gallery:hover{
+	border: #39363600;
+	color: #39363600;
+}
+.gallery:hover .in-gallery-menu{
+	display: flex;
+}
